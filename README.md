@@ -76,6 +76,20 @@ Una herramienta para ayudar a los usuarios a crear y diseñar un CV personalizad
 
 
 
+
+
+
+
+
+
+
+
+<--
+
+
+
+
+
 ### Construido Con
 
 * [![PySide6][PySide6]][Next-url]
@@ -210,3 +224,6 @@ Use this space to list resources you find helpful and would like to give credit 
 [linkedin-url]: https://linkedin.com/in/othneildrew
 [product-screenshot]: images/screenshot.png
 [python]: https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white
+
+
+-->
