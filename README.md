@@ -22,13 +22,10 @@
     <img src="https://www.picng.com/upload/cv/png_cv_87828.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">CurriTec</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <br />
+    Una herramienta para crear curriculums!
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
     ·
