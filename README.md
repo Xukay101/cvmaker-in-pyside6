@@ -72,19 +72,7 @@
 
 Una herramienta para ayudar a los usuarios a crear y diseñar un CV personalizado. La aplicación permitirá a los usuarios seleccionar una plantilla de CV de una variedad de opciones, añadir y editar su información personal, y exportar el CV en formato PDF para imprimirlo o enviarlo por correo electrónico.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-
-
-
-
-
-
-
-
-<!--
+<p align="right">(<a href="#readme-top">back to top</a>)</p
 
 
 
@@ -226,4 +214,3 @@ Use this space to list resources you find helpful and would like to give credit 
 [python]: https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white
 
 
--->
