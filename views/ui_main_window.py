@@ -16,7 +16,7 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QFrame, QLabel, QPushButton,
-    QSizePolicy, QVBoxLayout, QWidget)
+    QSizePolicy, QTextBrowser, QVBoxLayout, QWidget)
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -68,9 +68,13 @@ class Ui_MainWindow(object):
         self.top_text_2.setLayoutDirection(Qt.LeftToRight)
         self.top_text_2.setStyleSheet(u"color: rgb(65, 65, 65);")
         self.top_text_2.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
-        self.button_1 = QPushButton(self.top_bar_frame)
-        self.button_1.setObjectName(u"button_1")
-        self.button_1.setGeometry(QRect(130, 70, 131, 71))
+        self.button_2 = QPushButton(self.top_bar_frame)
+        self.button_2.setObjectName(u"button_2")
+        self.button_2.setGeometry(QRect(130, 70, 131, 71))
+        self.textBrowser = QTextBrowser(self.top_content_frame)
+        self.textBrowser.setObjectName(u"textBrowser")
+        self.textBrowser.setGeometry(QRect(60, 230, 256, 192))
+        self.textBrowser.setStyleSheet(u"color: #000")
 
         self.verticalLayout_3.addWidget(self.top_content_frame)
 
@@ -88,7 +92,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"Form", None))
-        self.top_text_2.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
-        self.button_1.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
+        self.top_text_2.setText(QCoreApplication.translate("MainWindow", u"HolaMundo", None))
+        self.button_2.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
     # retranslateUi
 

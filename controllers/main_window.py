@@ -7,7 +7,7 @@ class MainWindowForm(QWidget, Ui_MainWindow):
         super().__init__()
         self.setupUi(self)
 
-        self.button_1.clicked.connect(self.hello)
+        self.button_2.clicked.connect(self.hello)
 
     def hello(self):
         print('Hello World')
