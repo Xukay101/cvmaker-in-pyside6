@@ -66,7 +66,7 @@
        <number>0</number>
       </property>
       <item>
-       <widget class="QFrame" name="background_Frame">
+       <widget class="QFrame" name="background_frame">
         <property name="autoFillBackground">
          <bool>false</bool>
         </property>
@@ -79,44 +79,161 @@
         <property name="frameShadow">
          <enum>QFrame::Raised</enum>
         </property>
-        <layout class="QVBoxLayout" name="verticalLayout_3">
-         <property name="spacing">
-          <number>0</number>
+        <widget class="QStackedWidget" name="stacked_widget">
+         <property name="enabled">
+          <bool>true</bool>
          </property>
-         <property name="leftMargin">
-          <number>0</number>
+         <property name="geometry">
+          <rect>
+           <x>230</x>
+           <y>0</y>
+           <width>671</width>
+           <height>701</height>
+          </rect>
          </property>
-         <property name="topMargin">
-          <number>0</number>
+         <property name="currentIndex">
+          <number>8</number>
          </property>
-         <property name="rightMargin">
-          <number>0</number>
-         </property>
-         <property name="bottomMargin">
-          <number>0</number>
-         </property>
-         <item>
-          <widget class="QFrame" name="top_content_frame">
+         <widget class="QWidget" name="page_1">
+          <widget class="QLabel" name="label_2">
+           <property name="geometry">
+            <rect>
+             <x>230</x>
+             <y>280</y>
+             <width>191</width>
+             <height>81</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>22</pointsize>
+            </font>
+           </property>
            <property name="styleSheet">
-            <string notr="true"/>
+            <string notr="true">color: #000;</string>
            </property>
-           <property name="frameShape">
-            <enum>QFrame::StyledPanel</enum>
+           <property name="text">
+            <string>Pagina 1</string>
            </property>
-           <property name="frameShadow">
-            <enum>QFrame::Raised</enum>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="page_2">
+          <widget class="QLabel" name="label_3">
+           <property name="geometry">
+            <rect>
+             <x>200</x>
+             <y>290</y>
+             <width>241</width>
+             <height>41</height>
+            </rect>
            </property>
-           <widget class="QFrame" name="top_bar_frame">
-            <property name="geometry">
-             <rect>
-              <x>0</x>
-              <y>0</y>
-              <width>901</width>
-              <height>181</height>
-             </rect>
+           <property name="font">
+            <font>
+             <pointsize>22</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: #000;</string>
+           </property>
+           <property name="text">
+            <string>Pagina 2</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="page_3"/>
+         <widget class="QWidget" name="page_4"/>
+         <widget class="QWidget" name="page_5"/>
+         <widget class="QWidget" name="page_6"/>
+         <widget class="QWidget" name="page_7"/>
+         <widget class="QWidget" name="page_8"/>
+         <widget class="QWidget" name="page_9">
+          <widget class="QLabel" name="label_4">
+           <property name="geometry">
+            <rect>
+             <x>290</x>
+             <y>290</y>
+             <width>58</width>
+             <height>18</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: #000;</string>
+           </property>
+           <property name="text">
+            <string>pagina 9</string>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+        <widget class="QFrame" name="side_menu_container">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>231</width>
+           <height>701</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>231</width>
+           <height>701</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>231</width>
+           <height>701</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+           <italic>true</italic>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: #4a8dac;
+color: white;
+font-weight: 600;
+font-size: 20px;
+line-height: 65px;
+text-align: center;
+letter-spacing: 1px;
+
+</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <property name="lineWidth">
+          <number>0</number>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <property name="rightMargin">
+           <number>9</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="lineWidth">
+             <number>0</number>
             </property>
+            <property name="text">
+             <string>CV Maker</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_1">
             <property name="styleSheet">
-             <string notr="true">background-color:  rgb(232, 164, 42);</string>
+             <string notr="true">QFrame {border: 0px;}</string>
             </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
@@ -124,52 +241,574 @@
             <property name="frameShadow">
              <enum>QFrame::Raised</enum>
             </property>
-            <widget class="QLabel" name="top_text_2">
-             <property name="geometry">
-              <rect>
-               <x>240</x>
-               <y>20</y>
-               <width>411</width>
-               <height>71</height>
-              </rect>
-             </property>
-             <property name="font">
-              <font>
-               <family>Ubuntu Mono</family>
-               <pointsize>22</pointsize>
-               <bold>true</bold>
-              </font>
-             </property>
-             <property name="layoutDirection">
-              <enum>Qt::LeftToRight</enum>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">color: rgb(65, 65, 65);</string>
-             </property>
-             <property name="text">
-              <string>CurriTec</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
-            </widget>
-           </widget>
-           <widget class="QPushButton" name="button_2">
-            <property name="geometry">
-             <rect>
-              <x>380</x>
-              <y>380</y>
-              <width>131</width>
-              <height>71</height>
-             </rect>
+            <property name="lineWidth">
+             <number>0</number>
             </property>
-            <property name="text">
-             <string>PushButton</string>
-            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <property name="spacing">
+              <number>6</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QFrame" name="frame_6">
+               <property name="styleSheet">
+                <string notr="true">border-width: 0px;</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <property name="lineWidth">
+                <number>0</number>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_11">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QPushButton" name="button_1">
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton{
+    background-color: #fc4a1a;
+    border-style: outset;
+    border-width: 0px;
+    border-color: beige;
+	text-align: left;
+	padding: 0px 0px 0px 10px;
+}
+QPushButton::hover{
+	background-color: #f24414;
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Started</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_2">
+               <property name="styleSheet">
+                <string notr="true">border-width: 0px;
+border: 0px;
+</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <property name="lineWidth">
+                <number>0</number>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_7">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QPushButton" name="button_2">
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton{
+    background-color: #fc4a1a;
+    border-style: outset;
+    border-width: 0px;
+    border-color: beige;
+	text-align: left;
+	padding: 0px 0px 0px 10px;
+}
+QPushButton::hover{
+	background-color: #f24414;
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Create CV</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QFrame" name="frame_3">
+                  <property name="enabled">
+                   <bool>true</bool>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>-1</pointsize>
+                    <italic>true</italic>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: #f7b733;
+font-size: 14px;
+border-width: 0px;
+</string>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_8">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <property name="leftMargin">
+                    <number>9</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>9</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <widget class="QPushButton" name="button_4">
+                     <property name="enabled">
+                      <bool>true</bool>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+    background-color: #f7b733;
+    border-style: outset;
+    border-width: 0px;
+    border-color: beige;
+	text-align: left;
+	padding: 0px 0px 0px 10px;
+}
+QPushButton:hover{
+	text-align: center;
+	font-size: 15px;
+}</string>
+                     </property>
+                     <property name="text">
+                      <string>Start a New CV</string>
+                     </property>
+                     <property name="checkable">
+                      <bool>false</bool>
+                     </property>
+                     <property name="checked">
+                      <bool>false</bool>
+                     </property>
+                     <property name="default">
+                      <bool>false</bool>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="Line" name="line">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgb(255, 255, 255);</string>
+                     </property>
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="button_5">
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+    background-color: #f7b733;
+    border-style: outset;
+    border-width: 0px;
+    border-color: beige;
+	text-align: left;
+	padding: 0px 0px 0px 10px;
+}
+QPushButton::hover{
+	text-align: center;
+	font-size: 15px;
+}</string>
+                     </property>
+                     <property name="text">
+                      <string>Enter CV sections</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QFrame" name="frame_7">
+                     <property name="enabled">
+                      <bool>true</bool>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <pointsize>-1</pointsize>
+                       <italic>true</italic>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">background-color: #f7b733;
+font-size: 14px;
+border-width: 0px;
+</string>
+                     </property>
+                     <property name="frameShape">
+                      <enum>QFrame::StyledPanel</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_12">
+                      <property name="spacing">
+                       <number>0</number>
+                      </property>
+                      <property name="leftMargin">
+                       <number>15</number>
+                      </property>
+                      <property name="topMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="rightMargin">
+                       <number>9</number>
+                      </property>
+                      <property name="bottomMargin">
+                       <number>0</number>
+                      </property>
+                      <item>
+                       <widget class="QPushButton" name="button_6">
+                        <property name="styleSheet">
+                         <string notr="true">QPushButton{
+    background-color: #f7b733;
+    border-style: outset;
+    border-width: 0px;
+    border-color: beige;
+	text-align: left;
+	padding: 0px 0px 0px 10px;
+}
+QPushButton::hover{
+	text-align: center;
+	font-size: 15px;
+}</string>
+                        </property>
+                        <property name="text">
+                         <string>Summary</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="button_9">
+                        <property name="styleSheet">
+                         <string notr="true">QPushButton{
+    background-color: #f7b733;
+    border-style: outset;
+    border-width: 0px;
+    border-color: beige;
+	text-align: left;
+	padding: 0px 0px 0px 10px;
+}
+QPushButton::hover{
+	text-align: center;
+	font-size: 15px;
+}</string>
+                        </property>
+                        <property name="text">
+                         <string>Experience</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="button_10">
+                        <property name="styleSheet">
+                         <string notr="true">QPushButton{
+    background-color: #f7b733;
+    border-style: outset;
+    border-width: 0px;
+    border-color: beige;
+	text-align: left;
+	padding: 0px 0px 0px 10px;
+}
+QPushButton::hover{
+	text-align: center;
+	font-size: 15px;
+}</string>
+                        </property>
+                        <property name="text">
+                         <string>Certifications</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="button_11">
+                        <property name="styleSheet">
+                         <string notr="true">QPushButton{
+    background-color: #f7b733;
+    border-style: outset;
+    border-width: 0px;
+    border-color: beige;
+	text-align: left;
+	padding: 0px 0px 0px 10px;
+}
+QPushButton::hover{
+	text-align: center;
+	font-size: 15px;
+}</string>
+                        </property>
+                        <property name="text">
+                         <string>Courses</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="button_12">
+                        <property name="styleSheet">
+                         <string notr="true">QPushButton{
+    background-color: #f7b733;
+    border-style: outset;
+    border-width: 0px;
+    border-color: beige;
+	text-align: left;
+	padding: 0px 0px 0px 10px;
+}
+QPushButton::hover{
+	text-align: center;
+	font-size: 15px;
+}</string>
+                        </property>
+                        <property name="text">
+                         <string>Skills</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="Line" name="line_2">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgb(255, 255, 255);</string>
+                     </property>
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="button_7">
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+    background-color: #f7b733;
+    border-style: outset;
+    border-width: 0px;
+    border-color: beige;
+	text-align: left;
+	padding: 0px 0px 0px 10px;
+}
+QPushButton::hover{
+	text-align: center;
+	font-size: 15px;
+}</string>
+                     </property>
+                     <property name="text">
+                      <string>Select CV Style</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="Line" name="line_3">
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgb(255, 255, 255);</string>
+                     </property>
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="button_8">
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+    background-color: #f7b733;
+    border-style: outset;
+    border-width: 0px;
+    border-color: beige;
+	text-align: left;
+	padding: 0px 0px 0px 10px;
+}
+QPushButton::hover{
+	text-align: center;
+	font-size: 15px;
+}</string>
+                     </property>
+                     <property name="text">
+                      <string>Select Font Style</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_4">
+               <property name="styleSheet">
+                <string notr="true">border-width: 0px;</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <property name="lineWidth">
+                <number>0</number>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_9">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QPushButton" name="button_3">
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton{
+    background-color: #fc4a1a;
+    border-style: outset;
+    border-width: 0px;
+    border-color: beige;
+	text-align: left;
+	padding: 0px 0px 0px 10px;
+}
+QPushButton::hover{
+	background-color: #f24414;
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>Edit CV</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QFrame" name="frame_5">
+                  <property name="enabled">
+                   <bool>true</bool>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>-1</pointsize>
+                    <italic>true</italic>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: #f7b733;
+font-size: 14px;
+border-width: 0px;</string>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_10">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <property name="leftMargin">
+                    <number>9</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>0</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>9</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <widget class="QPushButton" name="button_231">
+                     <property name="styleSheet">
+                      <string notr="true">QPushButton{
+    background-color: #f7b733;
+    border-style: outset;
+    border-width: 0px;
+    border-color: beige;
+	text-align: left;
+	padding: 0px 0px 0px 10px;
+}</string>
+                     </property>
+                     <property name="text">
+                      <string>PushButton</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
            </widget>
-          </widget>
-         </item>
-        </layout>
+          </item>
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>637</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
        </widget>
       </item>
      </layout>
