@@ -1,1 +1,4 @@
-pyside6
+PySide6==6.2.4
+beautifulsoup4==4.11.1
+weasyprint==57.0
+PyYAML==6.0
