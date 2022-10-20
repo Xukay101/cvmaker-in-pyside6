@@ -3,7 +3,7 @@
 ################################################################################
 ## Form generated from reading UI file 'main_window.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.2.4
+## Created by: Qt User Interface Compiler version 6.4.0
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -57,6 +57,25 @@ class Ui_MainWindow(object):
         font.setPointSize(22)
         self.label_2.setFont(font)
         self.label_2.setStyleSheet(u"color: #000;")
+        self.frame = QFrame(self.page_1)
+        self.frame.setObjectName(u"frame")
+        self.frame.setGeometry(QRect(0, 0, 671, 701))
+        self.frame.setTabletTracking(False)
+        self.frame.setStyleSheet(u"background-color: LightBlue;\n"
+"")
+        self.frame.setFrameShape(QFrame.StyledPanel)
+        self.frame.setFrameShadow(QFrame.Raised)
+        self.label_5 = QLabel(self.frame)
+        self.label_5.setObjectName(u"label_5")
+        self.label_5.setGeometry(QRect(210, 20, 251, 91))
+        self.label_6 = QLabel(self.frame)
+        self.label_6.setObjectName(u"label_6")
+        self.label_6.setGeometry(QRect(40, 110, 591, 181))
+        self.label_6.setLayoutDirection(Qt.LeftToRight)
+        self.label_6.setFrameShape(QFrame.NoFrame)
+        self.label_6.setFrameShadow(QFrame.Plain)
+        self.label_6.setMidLineWidth(0)
+        self.label_6.setScaledContents(False)
         self.stacked_widget.addWidget(self.page_1)
         self.page_2 = QWidget()
         self.page_2.setObjectName(u"page_2")
@@ -144,6 +163,8 @@ class Ui_MainWindow(object):
         self.verticalLayout_11.setContentsMargins(0, 0, 0, 0)
         self.button_1 = QPushButton(self.frame_6)
         self.button_1.setObjectName(u"button_1")
+        self.button_1.setCursor(QCursor(Qt.CrossCursor))
+        self.button_1.setFocusPolicy(Qt.ClickFocus)
         self.button_1.setStyleSheet(u"QPushButton{\n"
 "    background-color: #fc4a1a;\n"
 "    border-style: outset;\n"
@@ -155,6 +176,7 @@ class Ui_MainWindow(object):
 "QPushButton::hover{\n"
 "	background-color: #f24414;\n"
 "}")
+        self.button_1.setAutoRepeatInterval(98)
 
         self.verticalLayout_11.addWidget(self.button_1)
 
@@ -480,7 +502,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stacked_widget.setCurrentIndex(8)
+        self.stacked_widget.setCurrentIndex(0)
         self.button_4.setDefault(False)
 
 
@@ -490,6 +512,15 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"Form", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Pagina 1", None))
+        self.label_5.setText(QCoreApplication.translate("MainWindow", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"hr { height: 1px; border-width: 0; }\n"
+"li.unchecked::marker { content: \"\\2610\"; }\n"
+"li.checked::marker { content: \"\\2612\"; }\n"
+"</style></head><body style=\" font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:48pt; font-weight:700; color:#0055ff;\">CurriTec</span></p></body></html>", None))
+        self.label_6.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:14pt; font-weight:700;\">Muchas veces dise\u00f1ar nuestro Curriculum puede ser algo tedioso<br/>y complicado, es por eso que decidimos crear CurriTec.<br/>Esta aplicaci\u00f3n de escritorio tiene el objetivo de ayudar<br/>a muchas personas, ofreciendo la posibilidad de elegir<br/>entre varias plantillas totalmente gratis y de forma r\u00e1pida.</span></p></body></html>", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"Pagina 2", None))
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"pagina 9", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"CV Maker", None))
