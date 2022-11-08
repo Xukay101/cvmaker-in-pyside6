@@ -48,66 +48,9 @@ class Ui_MainWindow(object):
         self.stacked_widget.setObjectName(u"stacked_widget")
         self.stacked_widget.setEnabled(True)
         self.stacked_widget.setGeometry(QRect(230, 0, 671, 701))
-        self.page_2 = QWidget()
-        self.page_2.setObjectName(u"page_2")
-        self.frame = QFrame(self.page_2)
-        self.frame.setObjectName(u"frame")
-        self.frame.setGeometry(QRect(100, 340, 481, 231))
-        self.frame.setStyleSheet(u"color: white;\n"
-"font-weight: 600;\n"
-"font-size: 25px;\n"
-"line-height: 65px;\n"
-"text-align: center;\n"
-"letter-spacing: 1px;\n"
-"border: 0px;\n"
-"border-radius: 20px;\n"
-"")
-        self.frame.setFrameShape(QFrame.StyledPanel)
-        self.frame.setFrameShadow(QFrame.Raised)
-        self.button_13 = QPushButton(self.frame)
-        self.button_13.setObjectName(u"button_13")
-        self.button_13.setGeometry(QRect(100, 40, 281, 41))
-        self.button_13.setStyleSheet(u"QPushButton{\n"
-"    background-color: #fc4a1a;\n"
-"    border-style: outset;\n"
-"    border-width: 0px;\n"
-"    border-color: beige;\n"
-"	text-align: left;\n"
-"	padding: 0px 0px 0px 10px;\n"
-"	text-align: center;\n"
-"}\n"
-"QPushButton::hover{\n"
-"	background-color: #f24414;\n"
-"}")
-        self.button_14 = QPushButton(self.frame)
-        self.button_14.setObjectName(u"button_14")
-        self.button_14.setGeometry(QRect(100, 100, 281, 41))
-        self.button_14.setStyleSheet(u"QPushButton{\n"
-"    background-color: #fc4a1a;\n"
-"    border-style: outset;\n"
-"    border-width: 0px;\n"
-"    border-color: beige;\n"
-"	text-align: left;\n"
-"	padding: 0px 0px 0px 10px;\n"
-"	text-align: center;\n"
-"}\n"
-"QPushButton::hover{\n"
-"	background-color: #f24414;\n"
-"}")
-        self.frame_8 = QFrame(self.page_2)
-        self.frame_8.setObjectName(u"frame_8")
-        self.frame_8.setGeometry(QRect(100, 90, 481, 251))
-        self.frame_8.setStyleSheet(u"border:0px;\n"
-"")
-        self.frame_8.setFrameShape(QFrame.StyledPanel)
-        self.frame_8.setFrameShadow(QFrame.Raised)
-        self.frame_9 = QFrame(self.frame_8)
-        self.frame_9.setObjectName(u"frame_9")
-        self.frame_9.setGeometry(QRect(130, 60, 211, 161))
-        self.frame_9.setStyleSheet(u"background-color: #4a8dac;")
-        self.frame_9.setFrameShape(QFrame.StyledPanel)
-        self.frame_9.setFrameShadow(QFrame.Raised)
-        self.frame_10 = QFrame(self.page_2)
+        self.page_1 = QWidget()
+        self.page_1.setObjectName(u"page_1")
+        self.frame_10 = QFrame(self.page_1)
         self.frame_10.setObjectName(u"frame_10")
         self.frame_10.setGeometry(QRect(0, 640, 671, 61))
         self.frame_10.setStyleSheet(u"color: white;\n"
@@ -136,17 +79,10 @@ class Ui_MainWindow(object):
 "QPushButton::hover{\n"
 "	background-color: #f24414;\n"
 "}")
-        self.stacked_widget.addWidget(self.page_2)
-        self.page_1 = QWidget()
-        self.page_1.setObjectName(u"page_1")
-        self.label_3 = QLabel(self.page_1)
-        self.label_3.setObjectName(u"label_3")
-        self.label_3.setGeometry(QRect(200, 290, 241, 41))
-        font = QFont()
-        font.setPointSize(22)
-        self.label_3.setFont(font)
-        self.label_3.setStyleSheet(u"color: #000;")
-        self.frame_11 = QFrame(self.page_1)
+        self.stacked_widget.addWidget(self.page_1)
+        self.page_2 = QWidget()
+        self.page_2.setObjectName(u"page_2")
+        self.frame_11 = QFrame(self.page_2)
         self.frame_11.setObjectName(u"frame_11")
         self.frame_11.setGeometry(QRect(0, 640, 671, 61))
         self.frame_11.setStyleSheet(u"color: white;\n"
@@ -190,7 +126,64 @@ class Ui_MainWindow(object):
 "QPushButton::hover{\n"
 "	background-color: #f24414;\n"
 "}")
-        self.stacked_widget.addWidget(self.page_1)
+        self.frame_19 = QFrame(self.page_2)
+        self.frame_19.setObjectName(u"frame_19")
+        self.frame_19.setGeometry(QRect(100, 50, 481, 251))
+        self.frame_19.setStyleSheet(u"border:0px;\n"
+"")
+        self.frame_19.setFrameShape(QFrame.StyledPanel)
+        self.frame_19.setFrameShadow(QFrame.Raised)
+        self.frame_20 = QFrame(self.frame_19)
+        self.frame_20.setObjectName(u"frame_20")
+        self.frame_20.setGeometry(QRect(130, 60, 211, 161))
+        self.frame_20.setStyleSheet(u"background-color: #4a8dac;")
+        self.frame_20.setFrameShape(QFrame.StyledPanel)
+        self.frame_20.setFrameShadow(QFrame.Raised)
+        self.frame_21 = QFrame(self.page_2)
+        self.frame_21.setObjectName(u"frame_21")
+        self.frame_21.setGeometry(QRect(100, 300, 481, 231))
+        self.frame_21.setStyleSheet(u"color: white;\n"
+"font-weight: 600;\n"
+"font-size: 25px;\n"
+"line-height: 65px;\n"
+"text-align: center;\n"
+"letter-spacing: 1px;\n"
+"border: 0px;\n"
+"border-radius: 20px;\n"
+"")
+        self.frame_21.setFrameShape(QFrame.StyledPanel)
+        self.frame_21.setFrameShadow(QFrame.Raised)
+        self.button_15 = QPushButton(self.frame_21)
+        self.button_15.setObjectName(u"button_15")
+        self.button_15.setGeometry(QRect(100, 40, 281, 41))
+        self.button_15.setStyleSheet(u"QPushButton{\n"
+"    background-color: #fc4a1a;\n"
+"    border-style: outset;\n"
+"    border-width: 0px;\n"
+"    border-color: beige;\n"
+"	text-align: left;\n"
+"	padding: 0px 0px 0px 10px;\n"
+"	text-align: center;\n"
+"}\n"
+"QPushButton::hover{\n"
+"	background-color: #f24414;\n"
+"}")
+        self.button_17 = QPushButton(self.frame_21)
+        self.button_17.setObjectName(u"button_17")
+        self.button_17.setGeometry(QRect(100, 100, 281, 41))
+        self.button_17.setStyleSheet(u"QPushButton{\n"
+"    background-color: #fc4a1a;\n"
+"    border-style: outset;\n"
+"    border-width: 0px;\n"
+"    border-color: beige;\n"
+"	text-align: left;\n"
+"	padding: 0px 0px 0px 10px;\n"
+"	text-align: center;\n"
+"}\n"
+"QPushButton::hover{\n"
+"	background-color: #f24414;\n"
+"}")
+        self.stacked_widget.addWidget(self.page_2)
         self.page_3 = QWidget()
         self.page_3.setObjectName(u"page_3")
         self.frame_12 = QFrame(self.page_3)
@@ -514,10 +507,10 @@ class Ui_MainWindow(object):
         self.side_menu_container.setGeometry(QRect(0, 0, 231, 701))
         self.side_menu_container.setMinimumSize(QSize(231, 701))
         self.side_menu_container.setMaximumSize(QSize(231, 701))
-        font1 = QFont()
-        font1.setBold(True)
-        font1.setItalic(True)
-        self.side_menu_container.setFont(font1)
+        font = QFont()
+        font.setBold(True)
+        font.setItalic(True)
+        self.side_menu_container.setFont(font)
         self.side_menu_container.setStyleSheet(u"background-color: #4a8dac;\n"
 "color: white;\n"
 "font-weight: 600;\n"
@@ -610,7 +603,7 @@ class Ui_MainWindow(object):
         self.frame_3 = QFrame(self.frame_2)
         self.frame_3.setObjectName(u"frame_3")
         self.frame_3.setEnabled(True)
-        self.frame_3.setFont(font1)
+        self.frame_3.setFont(font)
         self.frame_3.setStyleSheet(u"background-color: #f7b733;\n"
 "font-size: 14px;\n"
 "border-width: 0px;\n"
@@ -669,7 +662,7 @@ class Ui_MainWindow(object):
         self.frame_7 = QFrame(self.frame_3)
         self.frame_7.setObjectName(u"frame_7")
         self.frame_7.setEnabled(True)
-        self.frame_7.setFont(font1)
+        self.frame_7.setFont(font)
         self.frame_7.setStyleSheet(u"background-color: #f7b733;\n"
 "font-size: 14px;\n"
 "border-width: 0px;\n"
@@ -853,7 +846,7 @@ class Ui_MainWindow(object):
         self.frame_5 = QFrame(self.frame_4)
         self.frame_5.setObjectName(u"frame_5")
         self.frame_5.setEnabled(True)
-        self.frame_5.setFont(font1)
+        self.frame_5.setFont(font)
         self.frame_5.setStyleSheet(u"background-color: #f7b733;\n"
 "font-size: 14px;\n"
 "border-width: 0px;")
@@ -907,12 +900,11 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"Form", None))
-        self.button_13.setText(QCoreApplication.translate("MainWindow", u"Cargar foto", None))
-        self.button_14.setText(QCoreApplication.translate("MainWindow", u"Tomar foto", None))
         self.button_16.setText(QCoreApplication.translate("MainWindow", u"Siguiente", None))
-        self.label_3.setText(QCoreApplication.translate("MainWindow", u"Pagina 2", None))
         self.button_18.setText(QCoreApplication.translate("MainWindow", u"Siguiente", None))
         self.button_19.setText(QCoreApplication.translate("MainWindow", u"Anterior", None))
+        self.button_15.setText(QCoreApplication.translate("MainWindow", u"Cargar foto", None))
+        self.button_17.setText(QCoreApplication.translate("MainWindow", u"Tomar foto", None))
         self.button_20.setText(QCoreApplication.translate("MainWindow", u"Siguiente", None))
         self.button_21.setText(QCoreApplication.translate("MainWindow", u"Anterior", None))
         self.button_22.setText(QCoreApplication.translate("MainWindow", u"Siguiente", None))
