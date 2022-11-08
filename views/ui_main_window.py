@@ -1574,7 +1574,7 @@ class Ui_MainWindow(object):
         self.button_28.setText(QCoreApplication.translate("MainWindow", u"Siguiente", None))
         self.button_29.setText(QCoreApplication.translate("MainWindow", u"Anterior", None))
         self.label_28.setText(QCoreApplication.translate("MainWindow", u"Habilidad", None))
-        self.label_34.setText(QCoreApplication.translate("MainWindow", u"Certificaciones", None))
+        self.label_34.setText(QCoreApplication.translate("MainWindow", u"Habilidades", None))
 
         __sortingEnabled1 = self.listWidget_2.isSortingEnabled()
         self.listWidget_2.setSortingEnabled(False)
@@ -1606,4 +1606,3 @@ class Ui_MainWindow(object):
         self.button_3.setText(QCoreApplication.translate("MainWindow", u"Editar CV", None))
         self.button_231.setText(QCoreApplication.translate("MainWindow", u"Importar CV", None))
     # retranslateUi
-
