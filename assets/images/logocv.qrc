@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="cct">
+    <file>logo-cv.png</file>
+    <file>avatar_default_12_545452.png</file>
+  </qresource>
+</RCC>
