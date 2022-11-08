@@ -95,26 +95,206 @@
           <number>0</number>
          </property>
          <widget class="QWidget" name="page_1">
-          <widget class="QLabel" name="label_2">
+          <widget class="QFrame" name="frame">
            <property name="geometry">
             <rect>
-             <x>230</x>
-             <y>280</y>
-             <width>191</width>
-             <height>81</height>
+             <x>100</x>
+             <y>340</y>
+             <width>481</width>
+             <height>231</height>
             </rect>
            </property>
-           <property name="font">
-            <font>
-             <pointsize>22</pointsize>
-            </font>
+           <property name="styleSheet">
+            <string notr="true">color: white;
+font-weight: 600;
+font-size: 25px;
+line-height: 65px;
+text-align: center;
+letter-spacing: 1px;
+border: 0px;
+border-radius: 20px;
+</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QPushButton" name="button_13">
+            <property name="geometry">
+             <rect>
+              <x>110</x>
+              <y>40</y>
+              <width>281</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+    background-color: #fc4a1a;
+    border-style: outset;
+    border-width: 0px;
+    border-color: beige;
+	text-align: left;
+	padding: 0px 0px 0px 10px;
+	text-align: center;
+}
+QPushButton::hover{
+	background-color: #f24414;
+}</string>
+            </property>
+            <property name="text">
+             <string>Cargar foto</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="button_14">
+            <property name="geometry">
+             <rect>
+              <x>110</x>
+              <y>100</y>
+              <width>281</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+    background-color: #fc4a1a;
+    border-style: outset;
+    border-width: 0px;
+    border-color: beige;
+	text-align: left;
+	padding: 0px 0px 0px 10px;
+	text-align: center;
+}
+QPushButton::hover{
+	background-color: #f24414;
+}</string>
+            </property>
+            <property name="text">
+             <string>Tomar foto</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QFrame" name="frame_8">
+           <property name="geometry">
+            <rect>
+             <x>100</x>
+             <y>90</y>
+             <width>481</width>
+             <height>251</height>
+            </rect>
            </property>
            <property name="styleSheet">
-            <string notr="true">color: #000;</string>
+            <string notr="true">border:0px;
+</string>
            </property>
-           <property name="text">
-            <string>Pagina 1</string>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
            </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QFrame" name="frame_9">
+            <property name="geometry">
+             <rect>
+              <x>140</x>
+              <y>60</y>
+              <width>211</width>
+              <height>161</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: #4a8dac;</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QFrame" name="frame_10">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>640</y>
+             <width>671</width>
+             <height>61</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: white;
+font-weight: 600;
+font-size: 20px;
+line-height: 65px;
+text-align: center;
+letter-spacing: 1px;
+border: 0px;
+border-radius: 15px;
+</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QPushButton" name="button_16">
+            <property name="geometry">
+             <rect>
+              <x>490</x>
+              <y>10</y>
+              <width>161</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+    background-color: #fc4a1a;
+    border-style: outset;
+    border-width: 0px;
+    border-color: beige;
+	text-align: left;
+	padding: 0px 0px 0px 10px;
+	text-align: center;
+}
+QPushButton::hover{
+	background-color: #f24414;
+}</string>
+            </property>
+            <property name="text">
+             <string>Siguiente</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="button_17">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>10</y>
+              <width>161</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+    background-color: #fc4a1a;
+    border-style: outset;
+    border-width: 0px;
+    border-color: beige;
+	text-align: left;
+	padding: 0px 0px 0px 10px;
+	text-align: center;
+}
+QPushButton::hover{
+	background-color: #f24414;
+}</string>
+            </property>
+            <property name="text">
+             <string>Anterior</string>
+            </property>
+           </widget>
           </widget>
          </widget>
          <widget class="QWidget" name="page_2">
@@ -139,13 +319,586 @@
             <string>Pagina 2</string>
            </property>
           </widget>
+          <widget class="QFrame" name="frame_11">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>640</y>
+             <width>671</width>
+             <height>61</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: white;
+font-weight: 600;
+font-size: 20px;
+line-height: 65px;
+text-align: center;
+letter-spacing: 1px;
+border: 0px;
+border-radius: 15px;
+</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QPushButton" name="button_18">
+            <property name="geometry">
+             <rect>
+              <x>490</x>
+              <y>10</y>
+              <width>161</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+    background-color: #fc4a1a;
+    border-style: outset;
+    border-width: 0px;
+    border-color: beige;
+	text-align: left;
+	padding: 0px 0px 0px 10px;
+	text-align: center;
+}
+QPushButton::hover{
+	background-color: #f24414;
+}</string>
+            </property>
+            <property name="text">
+             <string>Siguiente</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="button_19">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>10</y>
+              <width>161</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+    background-color: #fc4a1a;
+    border-style: outset;
+    border-width: 0px;
+    border-color: beige;
+	text-align: left;
+	padding: 0px 0px 0px 10px;
+	text-align: center;
+}
+QPushButton::hover{
+	background-color: #f24414;
+}</string>
+            </property>
+            <property name="text">
+             <string>Anterior</string>
+            </property>
+           </widget>
+          </widget>
          </widget>
-         <widget class="QWidget" name="page_3"/>
-         <widget class="QWidget" name="page_4"/>
-         <widget class="QWidget" name="page_5"/>
-         <widget class="QWidget" name="page_6"/>
-         <widget class="QWidget" name="page_7"/>
-         <widget class="QWidget" name="page_8"/>
+         <widget class="QWidget" name="page_3">
+          <widget class="QFrame" name="frame_12">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>640</y>
+             <width>671</width>
+             <height>61</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: white;
+font-weight: 600;
+font-size: 20px;
+line-height: 65px;
+text-align: center;
+letter-spacing: 1px;
+border: 0px;
+border-radius: 15px;
+</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QPushButton" name="button_20">
+            <property name="geometry">
+             <rect>
+              <x>490</x>
+              <y>10</y>
+              <width>161</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+    background-color: #fc4a1a;
+    border-style: outset;
+    border-width: 0px;
+    border-color: beige;
+	text-align: left;
+	padding: 0px 0px 0px 10px;
+	text-align: center;
+}
+QPushButton::hover{
+	background-color: #f24414;
+}</string>
+            </property>
+            <property name="text">
+             <string>Siguiente</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="button_21">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>10</y>
+              <width>161</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+    background-color: #fc4a1a;
+    border-style: outset;
+    border-width: 0px;
+    border-color: beige;
+	text-align: left;
+	padding: 0px 0px 0px 10px;
+	text-align: center;
+}
+QPushButton::hover{
+	background-color: #f24414;
+}</string>
+            </property>
+            <property name="text">
+             <string>Anterior</string>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="page_4">
+          <widget class="QFrame" name="frame_13">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>640</y>
+             <width>671</width>
+             <height>61</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: white;
+font-weight: 600;
+font-size: 20px;
+line-height: 65px;
+text-align: center;
+letter-spacing: 1px;
+border: 0px;
+border-radius: 15px;
+</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QPushButton" name="button_22">
+            <property name="geometry">
+             <rect>
+              <x>490</x>
+              <y>10</y>
+              <width>161</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+    background-color: #fc4a1a;
+    border-style: outset;
+    border-width: 0px;
+    border-color: beige;
+	text-align: left;
+	padding: 0px 0px 0px 10px;
+	text-align: center;
+}
+QPushButton::hover{
+	background-color: #f24414;
+}</string>
+            </property>
+            <property name="text">
+             <string>Siguiente</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="button_23">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>10</y>
+              <width>161</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+    background-color: #fc4a1a;
+    border-style: outset;
+    border-width: 0px;
+    border-color: beige;
+	text-align: left;
+	padding: 0px 0px 0px 10px;
+	text-align: center;
+}
+QPushButton::hover{
+	background-color: #f24414;
+}</string>
+            </property>
+            <property name="text">
+             <string>Anterior</string>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="page_5">
+          <widget class="QFrame" name="frame_14">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>640</y>
+             <width>671</width>
+             <height>61</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: white;
+font-weight: 600;
+font-size: 20px;
+line-height: 65px;
+text-align: center;
+letter-spacing: 1px;
+border: 0px;
+border-radius: 15px;
+</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QPushButton" name="button_24">
+            <property name="geometry">
+             <rect>
+              <x>490</x>
+              <y>10</y>
+              <width>161</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+    background-color: #fc4a1a;
+    border-style: outset;
+    border-width: 0px;
+    border-color: beige;
+	text-align: left;
+	padding: 0px 0px 0px 10px;
+	text-align: center;
+}
+QPushButton::hover{
+	background-color: #f24414;
+}</string>
+            </property>
+            <property name="text">
+             <string>Siguiente</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="button_25">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>10</y>
+              <width>161</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+    background-color: #fc4a1a;
+    border-style: outset;
+    border-width: 0px;
+    border-color: beige;
+	text-align: left;
+	padding: 0px 0px 0px 10px;
+	text-align: center;
+}
+QPushButton::hover{
+	background-color: #f24414;
+}</string>
+            </property>
+            <property name="text">
+             <string>Anterior</string>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="page_6">
+          <widget class="QFrame" name="frame_15">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>640</y>
+             <width>671</width>
+             <height>61</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: white;
+font-weight: 600;
+font-size: 20px;
+line-height: 65px;
+text-align: center;
+letter-spacing: 1px;
+border: 0px;
+border-radius: 15px;
+</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QPushButton" name="button_26">
+            <property name="geometry">
+             <rect>
+              <x>490</x>
+              <y>10</y>
+              <width>161</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+    background-color: #fc4a1a;
+    border-style: outset;
+    border-width: 0px;
+    border-color: beige;
+	text-align: left;
+	padding: 0px 0px 0px 10px;
+	text-align: center;
+}
+QPushButton::hover{
+	background-color: #f24414;
+}</string>
+            </property>
+            <property name="text">
+             <string>Siguiente</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="button_27">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>10</y>
+              <width>161</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+    background-color: #fc4a1a;
+    border-style: outset;
+    border-width: 0px;
+    border-color: beige;
+	text-align: left;
+	padding: 0px 0px 0px 10px;
+	text-align: center;
+}
+QPushButton::hover{
+	background-color: #f24414;
+}</string>
+            </property>
+            <property name="text">
+             <string>Anterior</string>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="page_7">
+          <widget class="QFrame" name="frame_16">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>640</y>
+             <width>671</width>
+             <height>61</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: white;
+font-weight: 600;
+font-size: 20px;
+line-height: 65px;
+text-align: center;
+letter-spacing: 1px;
+border: 0px;
+border-radius: 15px;
+</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QPushButton" name="button_28">
+            <property name="geometry">
+             <rect>
+              <x>490</x>
+              <y>10</y>
+              <width>161</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+    background-color: #fc4a1a;
+    border-style: outset;
+    border-width: 0px;
+    border-color: beige;
+	text-align: left;
+	padding: 0px 0px 0px 10px;
+	text-align: center;
+}
+QPushButton::hover{
+	background-color: #f24414;
+}</string>
+            </property>
+            <property name="text">
+             <string>Siguiente</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="button_29">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>10</y>
+              <width>161</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+    background-color: #fc4a1a;
+    border-style: outset;
+    border-width: 0px;
+    border-color: beige;
+	text-align: left;
+	padding: 0px 0px 0px 10px;
+	text-align: center;
+}
+QPushButton::hover{
+	background-color: #f24414;
+}</string>
+            </property>
+            <property name="text">
+             <string>Anterior</string>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="page_8">
+          <widget class="QFrame" name="frame_17">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>640</y>
+             <width>671</width>
+             <height>61</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: white;
+font-weight: 600;
+font-size: 20px;
+line-height: 65px;
+text-align: center;
+letter-spacing: 1px;
+border: 0px;
+border-radius: 15px;
+</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QPushButton" name="button_30">
+            <property name="geometry">
+             <rect>
+              <x>490</x>
+              <y>10</y>
+              <width>161</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+    background-color: #fc4a1a;
+    border-style: outset;
+    border-width: 0px;
+    border-color: beige;
+	text-align: left;
+	padding: 0px 0px 0px 10px;
+	text-align: center;
+}
+QPushButton::hover{
+	background-color: #f24414;
+}</string>
+            </property>
+            <property name="text">
+             <string>Siguiente</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="button_31">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>10</y>
+              <width>161</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+    background-color: #fc4a1a;
+    border-style: outset;
+    border-width: 0px;
+    border-color: beige;
+	text-align: left;
+	padding: 0px 0px 0px 10px;
+	text-align: center;
+}
+QPushButton::hover{
+	background-color: #f24414;
+}</string>
+            </property>
+            <property name="text">
+             <string>Anterior</string>
+            </property>
+           </widget>
+          </widget>
+         </widget>
          <widget class="QWidget" name="page_9">
           <widget class="QLabel" name="label_4">
            <property name="geometry">
@@ -162,6 +915,87 @@
            <property name="text">
             <string>pagina 9</string>
            </property>
+          </widget>
+          <widget class="QFrame" name="frame_18">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>640</y>
+             <width>671</width>
+             <height>61</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: white;
+font-weight: 600;
+font-size: 20px;
+line-height: 65px;
+text-align: center;
+letter-spacing: 1px;
+border: 0px;
+border-radius: 15px;
+</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QPushButton" name="button_32">
+            <property name="geometry">
+             <rect>
+              <x>490</x>
+              <y>10</y>
+              <width>161</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+    background-color: #fc4a1a;
+    border-style: outset;
+    border-width: 0px;
+    border-color: beige;
+	text-align: left;
+	padding: 0px 0px 0px 10px;
+	text-align: center;
+}
+QPushButton::hover{
+	background-color: #f24414;
+}</string>
+            </property>
+            <property name="text">
+             <string>Siguiente</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="button_33">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>10</y>
+              <width>161</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+    background-color: #fc4a1a;
+    border-style: outset;
+    border-width: 0px;
+    border-color: beige;
+	text-align: left;
+	padding: 0px 0px 0px 10px;
+	text-align: center;
+}
+QPushButton::hover{
+	background-color: #f24414;
+}</string>
+            </property>
+            <property name="text">
+             <string>Anterior</string>
+            </property>
+           </widget>
           </widget>
          </widget>
         </widget>
@@ -300,7 +1134,7 @@ QPushButton::hover{
 }</string>
                   </property>
                   <property name="text">
-                   <string>Started</string>
+                   <string>Inicio</string>
                   </property>
                  </widget>
                 </item>
@@ -355,7 +1189,7 @@ QPushButton::hover{
 }</string>
                   </property>
                   <property name="text">
-                   <string>Create CV</string>
+                   <string>Crear CV</string>
                   </property>
                  </widget>
                 </item>
@@ -419,7 +1253,7 @@ QPushButton:hover{
 }</string>
                      </property>
                      <property name="text">
-                      <string>Start a New CV</string>
+                      <string>Cargar Foto</string>
                      </property>
                      <property name="checkable">
                       <bool>false</bool>
@@ -459,7 +1293,7 @@ QPushButton::hover{
 }</string>
                      </property>
                      <property name="text">
-                      <string>Enter CV sections</string>
+                      <string>Secciones del CV</string>
                      </property>
                     </widget>
                    </item>
@@ -520,7 +1354,7 @@ QPushButton::hover{
 }</string>
                         </property>
                         <property name="text">
-                         <string>Summary</string>
+                         <string>Perfil Personal</string>
                         </property>
                        </widget>
                       </item>
@@ -541,7 +1375,7 @@ QPushButton::hover{
 }</string>
                         </property>
                         <property name="text">
-                         <string>Experience</string>
+                         <string>Experiencia Laboral</string>
                         </property>
                        </widget>
                       </item>
@@ -562,7 +1396,7 @@ QPushButton::hover{
 }</string>
                         </property>
                         <property name="text">
-                         <string>Certifications</string>
+                         <string>Certificaciones</string>
                         </property>
                        </widget>
                       </item>
@@ -583,7 +1417,7 @@ QPushButton::hover{
 }</string>
                         </property>
                         <property name="text">
-                         <string>Courses</string>
+                         <string>Cursos</string>
                         </property>
                        </widget>
                       </item>
@@ -604,7 +1438,7 @@ QPushButton::hover{
 }</string>
                         </property>
                         <property name="text">
-                         <string>Skills</string>
+                         <string>Habilidades</string>
                         </property>
                        </widget>
                       </item>
@@ -638,7 +1472,7 @@ QPushButton::hover{
 }</string>
                      </property>
                      <property name="text">
-                      <string>Select CV Style</string>
+                      <string>Seleccionar Estilo</string>
                      </property>
                     </widget>
                    </item>
@@ -669,7 +1503,7 @@ QPushButton::hover{
 }</string>
                      </property>
                      <property name="text">
-                      <string>Select Font Style</string>
+                      <string>Exportar CV</string>
                      </property>
                     </widget>
                    </item>
@@ -725,7 +1559,7 @@ QPushButton::hover{
 }</string>
                   </property>
                   <property name="text">
-                   <string>Edit CV</string>
+                   <string>Editar CV</string>
                   </property>
                  </widget>
                 </item>
@@ -781,7 +1615,7 @@ border-width: 0px;</string>
 }</string>
                      </property>
                      <property name="text">
-                      <string>PushButton</string>
+                      <string>Importar CV</string>
                      </property>
                     </widget>
                    </item>
