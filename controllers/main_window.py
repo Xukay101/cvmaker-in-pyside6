@@ -1,4 +1,5 @@
-from PySide6.QtWidgets import QWidget
+import qimage2ndarray
+from PySide6.QtWidgets import QWidget, QFileDialog
 from PySide6.QtGui import QPixmap
 
 from views.ui_main_window import Ui_MainWindow
@@ -14,6 +15,7 @@ class MainWindowForm(QWidget, Ui_MainWindow):
         # Init UI element states
         self.frame_3.setVisible(False)
         self.frame_5.setVisible(False)
+        self.label_36.setVisible(False)
 
         # connections
         self.button_1.clicked.connect(self.btn_1)
@@ -51,6 +53,7 @@ class MainWindowForm(QWidget, Ui_MainWindow):
         self.button_41.clicked.connect(self.btn_41)
         self.button_42.clicked.connect(self.btn_42)
         self.button_17.clicked.connect(self.open_camera)
+        self.button_15.clicked.connect(self.open_file_explorer)
 
     def btn_1(self):
         self.stacked_widget.setCurrentIndex(0)
@@ -120,4 +123,21 @@ class MainWindowForm(QWidget, Ui_MainWindow):
 
     def open_camera(self):
         self.widget = CameraWindowForm()
+        self.widget.bridge = self.set_capture
         self.widget.show()
+
+    def set_capture(self, image):
+        self.label_36.setPixmap(QPixmap.fromImage(image))
+        self.label_36.setScaledContents(True)
+        self.label_36.setVisible(True)
+
+    def open_file_explorer(self):
+        filename = QFileDialog.getOpenFileName(self, 'Open file', 
+        '~/',"Image files (*.jpg *.png *.svg)") #C: \\
+        if filename[0] == '':
+            return
+        imagepath = filename[0]
+        pix = QPixmap(imagepath)
+        self.label_36.setPixmap(QPixmap(pix))
+        self.label_36.setScaledContents(True)
+        self.label_36.setVisible(True)
