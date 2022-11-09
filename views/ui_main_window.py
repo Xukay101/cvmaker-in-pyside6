@@ -768,11 +768,6 @@ class Ui_MainWindow(object):
 "	border-size: 1px;\n"
 "	color: #000;\n"
 "}")
-        self.dateEdit_5 = QDateEdit(self.frame_23)
-        self.dateEdit_5.setObjectName(u"dateEdit_5")
-        self.dateEdit_5.setGeometry(QRect(370, 240, 231, 31))
-        self.dateEdit_5.setStyleSheet(u"background-color: rgb(240, 240, 240);\n"
-"color: #000;")
         self.label_31 = QLabel(self.frame_23)
         self.label_31.setObjectName(u"label_31")
         self.label_31.setGeometry(QRect(250, 30, 201, 51))
@@ -783,8 +778,6 @@ class Ui_MainWindow(object):
 "letter-spacing: 1px;\n"
 "color: #000;")
         self.listWidget = QListWidget(self.frame_23)
-        QListWidgetItem(self.listWidget)
-        QListWidgetItem(self.listWidget)
         self.listWidget.setObjectName(u"listWidget")
         self.listWidget.setGeometry(QRect(70, 90, 531, 101))
         self.listWidget.setStyleSheet(u"QListWidget{\n"
@@ -857,6 +850,14 @@ class Ui_MainWindow(object):
         icon3 = QIcon()
         icon3.addFile(u"./assets/icons/streamlinehq-add-circle-alternate-interface-essential-48.png", QSize(), QIcon.Normal, QIcon.Off)
         self.button_42.setIcon(icon3)
+        self.lineEdit_18 = QLineEdit(self.frame_23)
+        self.lineEdit_18.setObjectName(u"lineEdit_18")
+        self.lineEdit_18.setGeometry(QRect(370, 240, 231, 31))
+        self.lineEdit_18.setStyleSheet(u"QLineEdit{\n"
+"	background-color: rgb(240, 240, 240);\n"
+"	border-size: 1px;\n"
+"	color: #000;\n"
+"}")
         self.stacked_widget.addWidget(self.page_6)
         self.page_7 = QWidget()
         self.page_7.setObjectName(u"page_7")
@@ -938,8 +939,6 @@ class Ui_MainWindow(object):
 "letter-spacing: 1px;\n"
 "color: #000;")
         self.listWidget_2 = QListWidget(self.frame_25)
-        QListWidgetItem(self.listWidget_2)
-        QListWidgetItem(self.listWidget_2)
         self.listWidget_2.setObjectName(u"listWidget_2")
         self.listWidget_2.setGeometry(QRect(70, 90, 531, 101))
         self.listWidget_2.setStyleSheet(u"QListWidget{\n"
@@ -1505,7 +1504,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stacked_widget.setCurrentIndex(1)
+        self.stacked_widget.setCurrentIndex(6)
         self.button_4.setDefault(False)
 
 
@@ -1557,33 +1556,15 @@ class Ui_MainWindow(object):
         self.button_26.setText(QCoreApplication.translate("MainWindow", u"Siguiente", None))
         self.button_27.setText(QCoreApplication.translate("MainWindow", u"Anterior", None))
         self.label_27.setText(QCoreApplication.translate("MainWindow", u"Institucion/Universidad", None))
-        self.label_29.setText(QCoreApplication.translate("MainWindow", u"Fecha", None))
+        self.label_29.setText(QCoreApplication.translate("MainWindow", u"Titulo", None))
         self.label_30.setText(QCoreApplication.translate("MainWindow", u"Descripcion", None))
         self.label_31.setText(QCoreApplication.translate("MainWindow", u"Certificaciones", None))
-
-        __sortingEnabled = self.listWidget.isSortingEnabled()
-        self.listWidget.setSortingEnabled(False)
-        ___qlistwidgetitem = self.listWidget.item(0)
-        ___qlistwidgetitem.setText(QCoreApplication.translate("MainWindow", u"Prueba", None));
-        ___qlistwidgetitem1 = self.listWidget.item(1)
-        ___qlistwidgetitem1.setText(QCoreApplication.translate("MainWindow", u"Test", None));
-        self.listWidget.setSortingEnabled(__sortingEnabled)
-
         self.button_41.setText(QCoreApplication.translate("MainWindow", u"''", None))
         self.button_42.setText(QCoreApplication.translate("MainWindow", u"Agregar", None))
         self.button_28.setText(QCoreApplication.translate("MainWindow", u"Siguiente", None))
         self.button_29.setText(QCoreApplication.translate("MainWindow", u"Anterior", None))
         self.label_28.setText(QCoreApplication.translate("MainWindow", u"Habilidad", None))
-        self.label_34.setText(QCoreApplication.translate("MainWindow", u"Habilidades", None))
-
-        __sortingEnabled1 = self.listWidget_2.isSortingEnabled()
-        self.listWidget_2.setSortingEnabled(False)
-        ___qlistwidgetitem2 = self.listWidget_2.item(0)
-        ___qlistwidgetitem2.setText(QCoreApplication.translate("MainWindow", u"Prueba", None));
-        ___qlistwidgetitem3 = self.listWidget_2.item(1)
-        ___qlistwidgetitem3.setText(QCoreApplication.translate("MainWindow", u"Test", None));
-        self.listWidget_2.setSortingEnabled(__sortingEnabled1)
-
+        self.label_34.setText(QCoreApplication.translate("MainWindow", u"Certificaciones", None))
         self.button_39.setText(QCoreApplication.translate("MainWindow", u"Agregar", None))
         self.button_40.setText(QCoreApplication.translate("MainWindow", u"''", None))
         self.button_30.setText(QCoreApplication.translate("MainWindow", u"Siguiente", None))
@@ -1606,3 +1587,4 @@ class Ui_MainWindow(object):
         self.button_3.setText(QCoreApplication.translate("MainWindow", u"Editar CV", None))
         self.button_231.setText(QCoreApplication.translate("MainWindow", u"Importar CV", None))
     # retranslateUi
+

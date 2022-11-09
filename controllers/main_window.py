@@ -1,6 +1,8 @@
 from PySide6.QtWidgets import QWidget
+from PySide6.QtGui import QPixmap
 
 from views.ui_main_window import Ui_MainWindow
+from controllers.camera_window import CameraWindowForm
 
 class MainWindowForm(QWidget, Ui_MainWindow):
     def __init__(self):
@@ -44,6 +46,11 @@ class MainWindowForm(QWidget, Ui_MainWindow):
         self.button_32.clicked.connect(lambda: self.change_page(7))
         self.checkBox.toggled.connect(self.cb_1)
         self.checkBox_2.toggled.connect(self.cb_2)
+        self.button_40.clicked.connect(self.btn_40)
+        self.button_39.clicked.connect(self.btn_39)
+        self.button_41.clicked.connect(self.btn_41)
+        self.button_42.clicked.connect(self.btn_42)
+        self.button_17.clicked.connect(self.open_camera)
 
     def btn_1(self):
         self.stacked_widget.setCurrentIndex(0)
@@ -86,3 +93,31 @@ class MainWindowForm(QWidget, Ui_MainWindow):
             self.dateEdit_3.setDisabled(False)
             self.dateEdit_4.setDisabled(False)
             self.plainTextEdit_2.setDisabled(False)
+
+    def btn_40(self):
+        listItems = self.listWidget_2.selectedItems()
+        if not listItems: return        
+        for item in listItems:
+            self.listWidget_2.takeItem(self.listWidget_2.row(item))
+
+    def btn_39(self):
+        item = self.lineEdit_17.text()
+        if len(item) > 0:
+            self.listWidget_2.addItem(item)
+            self.lineEdit_17.clear()
+
+    def btn_41(self):
+        listItems = self.listWidget.selectedItems()
+        if not listItems: return        
+        for item in listItems:
+            self.listWidget.takeItem(self.listWidget.row(item))
+
+    def btn_42(self):
+        item = self.lineEdit_16.text()
+        if len(item) > 0:
+            self.listWidget.addItem(item)
+            self.lineEdit_16.clear()
+
+    def open_camera(self):
+        self.widget = CameraWindowForm()
+        self.widget.show()
