@@ -6,6 +6,8 @@ class MainWindowForm(QWidget, Ui_MainWindow):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
+        
+        self.stacked_widget.setCurrentIndex(0) # Set default init page
 
         self.stacked_widget.setCurrentIndex(0) # Set default init page
 
@@ -62,5 +64,34 @@ class MainWindowForm(QWidget, Ui_MainWindow):
             self.frame_5.setVisible(True)
             self.frame_3.setVisible(False)
 
+<<<<<<< HEAD
     def change_page(self, index):
         self.stacked_widget.setCurrentIndex(index)
+=======
+    def btn_4(self):
+        self.stacked_widget.setCurrentIndex(1)
+
+    def btn_5(self):
+        pass
+
+    def btn_6(self):
+        self.stacked_widget.setCurrentIndex(2)
+
+    def btn_7(self):
+        self.stacked_widget.setCurrentIndex(7)
+
+    def btn_8(self):
+        self.stacked_widget.setCurrentIndex(8)
+
+    def btn_9(self):
+        self.stacked_widget.setCurrentIndex(3)
+
+    def btn_10(self):
+        self.stacked_widget.setCurrentIndex(4)
+
+    def btn_11(self):
+        self.stacked_widget.setCurrentIndex(5)
+
+    def btn_12(self):
+        self.stacked_widget.setCurrentIndex(6)
+>>>>>>> d9927abcbcfdc65d23694a959f974f1d3798caa5
