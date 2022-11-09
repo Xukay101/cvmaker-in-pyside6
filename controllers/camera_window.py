@@ -34,10 +34,11 @@ class CameraWindowForm(QWidget, Ui_CameraWindow):
         self.image_label.setPixmap(QPixmap.fromImage(self.image))
 
     def capture_image(self):
-        self.image.save('./assets/temp/perfil.png')
+        self.bridge(self.image)
         self.close()
 
     def closeEvent(self, event):
         self.capture.release()
         cv2.destroyAllWindows()
-        del self.timer # Importante sin sigue repitiendo
+        del self.timer # Importante sin esto sigue repitiendo
+        event.accept()

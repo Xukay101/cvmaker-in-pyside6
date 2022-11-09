@@ -92,7 +92,7 @@
           </rect>
          </property>
          <property name="currentIndex">
-          <number>6</number>
+          <number>1</number>
          </property>
          <widget class="QWidget" name="page_1">
           <widget class="QFrame" name="frame_10">
@@ -346,9 +346,9 @@ QPushButton::hover{
             <property name="geometry">
              <rect>
               <x>140</x>
-              <y>60</y>
+              <y>40</y>
               <width>211</width>
-              <height>161</height>
+              <height>181</height>
              </rect>
             </property>
             <property name="styleSheet">
@@ -366,11 +366,27 @@ QPushButton::hover{
                <x>0</x>
                <y>0</y>
                <width>211</width>
-               <height>161</height>
+               <height>181</height>
               </rect>
              </property>
              <property name="styleSheet">
               <string notr="true">border-image: url(:/cct/avatar_default_12_545452.png);</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_36">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="geometry">
+              <rect>
+               <x>-3</x>
+               <y>-3</y>
+               <width>221</width>
+               <height>191</height>
+              </rect>
              </property>
              <property name="text">
               <string/>

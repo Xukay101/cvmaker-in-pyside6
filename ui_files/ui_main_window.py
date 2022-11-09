@@ -19,7 +19,7 @@ from PySide6.QtWidgets import (QApplication, QCheckBox, QDateEdit, QFrame,
     QLabel, QLineEdit, QListWidget, QListWidgetItem,
     QPlainTextEdit, QPushButton, QSizePolicy, QSpacerItem,
     QStackedWidget, QVBoxLayout, QWidget)
-import assets.images.logocv_rc
+import logocv_rc
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -209,7 +209,7 @@ class Ui_MainWindow(object):
 "	background-color: #f24414;\n"
 "}")
         icon = QIcon()
-        icon.addFile(u"./assets/icons/streamlinehq-common-file-upload-files-folders-48.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u"../assets/icons/streamlinehq-common-file-upload-files-folders-48.png", QSize(), QIcon.Normal, QIcon.Off)
         self.button_15.setIcon(icon)
         self.button_15.setIconSize(QSize(25, 25))
         self.button_17 = QPushButton(self.frame_21)
@@ -228,7 +228,7 @@ class Ui_MainWindow(object):
 "	background-color: #f24414;\n"
 "}")
         icon1 = QIcon()
-        icon1.addFile(u"./assets/icons/streamlinehq-webcam-1-computers-devices-electronics-48.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon1.addFile(u"../assets/icons/streamlinehq-webcam-1-computers-devices-electronics-48.png", QSize(), QIcon.Normal, QIcon.Off)
         self.button_17.setIcon(icon1)
         self.button_17.setIconSize(QSize(25, 25))
         self.stacked_widget.addWidget(self.page_2)
@@ -820,7 +820,7 @@ class Ui_MainWindow(object):
 "	background-color: #f24414;\n"
 "}")
         icon2 = QIcon()
-        icon2.addFile(u"./assets/icons/streamlinehq-bin-2-interface-essential-48.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon2.addFile(u"../assets/icons/streamlinehq-bin-2-interface-essential-48.png", QSize(), QIcon.Normal, QIcon.Off)
         self.button_41.setIcon(icon2)
         self.frame_27 = QFrame(self.frame_23)
         self.frame_27.setObjectName(u"frame_27")
@@ -852,7 +852,7 @@ class Ui_MainWindow(object):
 "	background-color: #f24414;\n"
 "}")
         icon3 = QIcon()
-        icon3.addFile(u"./assets/icons/streamlinehq-add-circle-alternate-interface-essential-48.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon3.addFile(u"../assets/icons/streamlinehq-add-circle-alternate-interface-essential-48.png", QSize(), QIcon.Normal, QIcon.Off)
         self.button_42.setIcon(icon3)
         self.lineEdit_18 = QLineEdit(self.frame_23)
         self.lineEdit_18.setObjectName(u"lineEdit_18")
@@ -1116,7 +1116,7 @@ class Ui_MainWindow(object):
 "	background-color: #f24414;\n"
 "}")
         icon4 = QIcon()
-        icon4.addFile(u"./assets/icons/streamlinehq-upload-box-internet-networks-servers-48.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon4.addFile(u"../assets/icons/streamlinehq-upload-box-internet-networks-servers-48.png", QSize(), QIcon.Normal, QIcon.Off)
         self.button_33.setIcon(icon4)
         self.stacked_widget.addWidget(self.page_9)
         self.side_menu_container = QFrame(self.background_frame)
