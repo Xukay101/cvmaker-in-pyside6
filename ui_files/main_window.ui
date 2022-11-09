@@ -23,7 +23,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string/>
   </property>
   <property name="styleSheet">
    <string notr="true"/>
@@ -92,7 +92,7 @@
           </rect>
          </property>
          <property name="currentIndex">
-          <number>6</number>
+          <number>1</number>
          </property>
          <widget class="QWidget" name="page_1">
           <widget class="QFrame" name="frame_10">
@@ -346,9 +346,9 @@ QPushButton::hover{
             <property name="geometry">
              <rect>
               <x>140</x>
-              <y>60</y>
+              <y>40</y>
               <width>211</width>
-              <height>161</height>
+              <height>181</height>
              </rect>
             </property>
             <property name="styleSheet">
@@ -366,7 +366,7 @@ QPushButton::hover{
                <x>0</x>
                <y>0</y>
                <width>211</width>
-               <height>161</height>
+               <height>181</height>
               </rect>
              </property>
              <property name="styleSheet">
@@ -376,7 +376,45 @@ QPushButton::hover{
               <string/>
              </property>
             </widget>
+            <widget class="QLabel" name="label_36">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="geometry">
+              <rect>
+               <x>-3</x>
+               <y>-3</y>
+               <width>221</width>
+               <height>191</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
            </widget>
+           <widget class="QFrame" name="frame_28">
+            <property name="geometry">
+             <rect>
+              <x>129</x>
+              <y>29</y>
+              <width>231</width>
+              <height>201</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: #f7b733;
+border-radius: 10px;</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+           <zorder>frame_28</zorder>
+           <zorder>frame_20</zorder>
           </widget>
           <widget class="QFrame" name="frame_21">
            <property name="geometry">

@@ -167,14 +167,27 @@ class Ui_MainWindow(object):
         self.frame_19.setFrameShadow(QFrame.Raised)
         self.frame_20 = QFrame(self.frame_19)
         self.frame_20.setObjectName(u"frame_20")
-        self.frame_20.setGeometry(QRect(140, 60, 211, 161))
+        self.frame_20.setGeometry(QRect(140, 40, 211, 181))
         self.frame_20.setStyleSheet(u"background-color: #4a8dac;")
         self.frame_20.setFrameShape(QFrame.StyledPanel)
         self.frame_20.setFrameShadow(QFrame.Raised)
         self.label_35 = QLabel(self.frame_20)
         self.label_35.setObjectName(u"label_35")
-        self.label_35.setGeometry(QRect(0, 0, 211, 161))
+        self.label_35.setGeometry(QRect(0, 0, 211, 181))
         self.label_35.setStyleSheet(u"border-image: url(:/cct/avatar_default_12_545452.png);")
+        self.label_36 = QLabel(self.frame_20)
+        self.label_36.setObjectName(u"label_36")
+        self.label_36.setEnabled(True)
+        self.label_36.setGeometry(QRect(-3, -3, 221, 191))
+        self.frame_28 = QFrame(self.frame_19)
+        self.frame_28.setObjectName(u"frame_28")
+        self.frame_28.setGeometry(QRect(129, 29, 231, 201))
+        self.frame_28.setStyleSheet(u"background-color: #f7b733;\n"
+"border-radius: 10px;")
+        self.frame_28.setFrameShape(QFrame.StyledPanel)
+        self.frame_28.setFrameShadow(QFrame.Raised)
+        self.frame_28.raise_()
+        self.frame_20.raise_()
         self.frame_21 = QFrame(self.page_2)
         self.frame_21.setObjectName(u"frame_21")
         self.frame_21.setGeometry(QRect(100, 300, 481, 231))
@@ -1504,7 +1517,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stacked_widget.setCurrentIndex(6)
+        self.stacked_widget.setCurrentIndex(1)
         self.button_4.setDefault(False)
 
 
@@ -1512,7 +1525,7 @@ class Ui_MainWindow(object):
     # setupUi
 
     def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"Form", None))
+        MainWindow.setWindowTitle("")
         self.button_16.setText(QCoreApplication.translate("MainWindow", u"Siguiente", None))
         self.label_26.setText(QCoreApplication.translate("MainWindow", u"Una herramienta para ayudar a los usuarios a crear y dise\u00f1ar un CV personalizado. La aplicaci\u00f3n permitir\u00e1 a los usuarios seleccionar una plantilla de CV de una variedad de opciones, a\u00f1adir y editar su informaci\u00f3n personal, y exportar el CV en formato PDF para imprimirlo o enviarlo por correo electr\u00f3nico.", None))
         self.label_32.setText(QCoreApplication.translate("MainWindow", u"CV Maker", None))
@@ -1520,6 +1533,7 @@ class Ui_MainWindow(object):
         self.button_18.setText(QCoreApplication.translate("MainWindow", u"Siguiente", None))
         self.button_19.setText(QCoreApplication.translate("MainWindow", u"Anterior", None))
         self.label_35.setText("")
+        self.label_36.setText("")
         self.button_15.setText(QCoreApplication.translate("MainWindow", u"Cargar foto", None))
         self.button_17.setText(QCoreApplication.translate("MainWindow", u"Tomar foto", None))
         self.button_20.setText(QCoreApplication.translate("MainWindow", u"Siguiente", None))
