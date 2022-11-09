@@ -1,7 +1,10 @@
 '''
 Crear funciones para cargar los datos del .yaml a plantilla html
 
-Usar BeautifulSoup4 para manejar objeto html
+Usar jinja2 para manejar objeto html
+
+https://www.youtube.com/watch?v=9XKlnD11lAA&list=WL&index=15&t=492s
 '''
-import BeautifulSoup4 as bs4
+import jinja2
+
 

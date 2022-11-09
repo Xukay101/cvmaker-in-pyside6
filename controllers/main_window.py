@@ -57,6 +57,8 @@ class MainWindowForm(QWidget, Ui_MainWindow):
         self.button_17.clicked.connect(self.open_camera)
         self.button_15.clicked.connect(self.open_file_explorer)
 
+        self.certifications = {}
+
     def btn_1(self):
         self.stacked_widget.setCurrentIndex(0)
         self.frame_3.setVisible(False)
@@ -103,7 +105,7 @@ class MainWindowForm(QWidget, Ui_MainWindow):
         listItems = self.listWidget_2.selectedItems()
         if not listItems: return        
         for item in listItems:
-            self.listWidget_2.takeItem(self.listWidget_2.row(item))
+            self.listWidget_2.takeItem(self.listWidget_2.row(item.text()))
 
     def btn_39(self):
         item = self.lineEdit_17.text()
@@ -115,13 +117,20 @@ class MainWindowForm(QWidget, Ui_MainWindow):
         listItems = self.listWidget.selectedItems()
         if not listItems: return        
         for item in listItems:
+            self.certifications.pop(item.text())
             self.listWidget.takeItem(self.listWidget.row(item))
 
     def btn_42(self):
-        item = self.lineEdit_16.text()
-        if len(item) > 0:
-            self.listWidget.addItem(item)
+        item1 = self.lineEdit_16.text()
+        item2 = self.lineEdit_18.text()
+        item3 = self.plainTextEdit_3.toPlainText()
+        if len(item1) > 0 and len(item2) > 0 and len(item3) > 0:
+            self.listWidget.addItem(f'{item1} / {item2}')
             self.lineEdit_16.clear()
+            self.lineEdit_18.clear()
+            self.plainTextEdit_3.clear()
+            self.certifications[f'{item1} / {item2}'] = [item1, item2, item3]
+        print(self.certifications)
 
     def open_camera(self):
         self.widget = CameraWindowForm()
@@ -143,3 +152,6 @@ class MainWindowForm(QWidget, Ui_MainWindow):
         self.label_36.setPixmap(QPixmap(pix))
         self.label_36.setScaledContents(True)
         self.label_36.setVisible(True)
+
+    def save_file_explorer(self):
+        pass
