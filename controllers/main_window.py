@@ -6,6 +6,8 @@ class MainWindowForm(QWidget, Ui_MainWindow):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
+        
+        self.stacked_widget.setCurrentIndex(0) # Set default init page
 
         self.stacked_widget.setCurrentIndex(0) # Set default init page
 
