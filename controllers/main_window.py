@@ -44,6 +44,8 @@ class MainWindowForm(QWidget, Ui_MainWindow):
         self.button_30.clicked.connect(lambda: self.change_page(8))
         self.button_31.clicked.connect(lambda: self.change_page(6))
         self.button_32.clicked.connect(lambda: self.change_page(7))
+        self.checkBox.toggled.connect(self.cb_1)
+        self.checkBox_2.toggled.connect(self.cb_2)
 
     def btn_1(self):
         self.stacked_widget.setCurrentIndex(0)
@@ -66,3 +68,23 @@ class MainWindowForm(QWidget, Ui_MainWindow):
 
     def change_page(self, index):
         self.stacked_widget.setCurrentIndex(index)
+
+    def cb_1(self):
+        if self.checkBox.isChecked():
+            self.dateEdit_2.setDisabled(True)
+        else:
+            self.dateEdit_2.setDisabled(False)
+
+    def cb_2(self):
+        if self.checkBox_2.isChecked():
+            self.lineEdit_12.setDisabled(True)
+            self.lineEdit_13.setDisabled(True)
+            self.dateEdit_3.setDisabled(True)
+            self.dateEdit_4.setDisabled(True)
+            self.plainTextEdit_2.setDisabled(True)
+        else:
+            self.lineEdit_12.setDisabled(False)
+            self.lineEdit_13.setDisabled(False)
+            self.dateEdit_3.setDisabled(False)
+            self.dateEdit_4.setDisabled(False)
+            self.plainTextEdit_2.setDisabled(False)
